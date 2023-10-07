@@ -10,7 +10,15 @@ Handling connection for 8080
 Handling connection for 8080
 
 
+==================================================================================
 
+voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (circleci-project-setup) $ ./make_prediction.sh 
+Port: 8080
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
 
 
 ==================================================================================
