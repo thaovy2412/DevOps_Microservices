@@ -1,4 +1,6 @@
 <include a CircleCI status badge, here>
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/thaovy2412/DevOps_Microservices/tree/circleci-project-setup.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/thaovy2412/DevOps_Microservices/tree/circleci-project-setup)
+
 
 ## Project Overview
 
@@ -31,6 +33,7 @@ python3 -m pip install --user virtualenv
 # You should have Python 3.7 available in your host. 
 # Check the Python path using `which python3`
 # Use a command similar to this one:
+cd project-ml-microservice-kubernetes
 python3 -m virtualenv --python=<path-to-Python3.7> .devops
 source .devops/bin/activate
 ```
