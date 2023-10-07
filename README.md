@@ -76,7 +76,7 @@ cd  project-ml-microservice-kubernetes
 ./run_docker.sh
 
 # upload docker image to Dockerhub
-./run_kubernetes.sh
+./upload_docker.sh
 
 # Deloy app to minikube
 ./run_kubenetes.sh
