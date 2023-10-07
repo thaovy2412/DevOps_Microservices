@@ -51,3 +51,41 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+# Update after Reviewd
+# Setup and Configure Kubernetes locally
+# 1.Installation
+<!-- Onlinux -->
+<!-- run command -->
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+# 2.Start your cluster
+minikube start
+
+# 3.Interact with your cluster
+# If you already have kubectl installed, you can now use it to access your shiny new cluster:
+kubectl get po -A
+alias kubectl="minikube kubectl --"
+minikube dashboard
+
+# 4.Deploy applications
+cd  project-ml-microservice-kubernetes
+# build and run docker local for test app
+./run_docker.sh
+
+# upload docker image to Dockerhub
+./run_kubernetes.sh
+
+# Deloy app to minikube
+./run_kubenetes.sh
+
+# Call API to app
+./make_prediction.sh
+
+# show the result on terminal and see the log on pod
+kubectl get pods
+kubectl logs -p [pod-name] 
+
+
